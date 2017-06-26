@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Lato|Open+Sans");
+
+body {
+  background-color: #99BFF6;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #095DD8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: linear 1.5s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #2070E5;
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
