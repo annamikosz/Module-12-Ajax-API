@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
+* {
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #469EC0;
+}
+
+/*---FONTS---*/
+h1, h3, .buttons, button.trigger {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  color: #055A7A;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.box {
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 100px;
+  background-color: #6FB9D5;
+}
+
+.buttons {
+  flex-direction: column;
+  display: flex;
+  font-size: 30px;
+  width: 300px;
+  text-align: center;
+  margin-top: 30px; 
+}
+
+button.trigger:hover,
+.tweet:hover {
+  background-color: #6FB9D5;
+}
+
+button.trigger,
+.tweet {
+  margin-top: 30px;
+  border: 1px solid #000;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  transition: linear .8s;
+  color: #055A7A;
+}
+.trigger {
+  background-color: #469EC0;
+}
+
+
