@@ -1,11 +1,11 @@
 $(function () {
-	var tweetLink = "https://twitter.com/intent/tweet?text=",
+	 var prefix = "https://cors-anywhere.herokuapp.com/",
+    tweetLink = "https://twitter.com/intent/tweet?text=",
     quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
   function getQuote() {
     $.getJSON(prefix + quoteUrl, createTweet);
-    $.ajaxSetup({
-      cache: false
+    $.ajaxSetup({ cache: false });
   }
 
   //Create Tweet
