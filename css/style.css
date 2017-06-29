@@ -11,15 +11,31 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: #928282;
+  margin: 0;
 }
-h1, h2{
-font-family: 'Playfair Display', serif;
-min-height: 100px;
-width: 100%;
-background-color: #BAACAC;
-text-align: center;
-padding: 20px 0;
 
+h1, h2{
+  font-family: 'Playfair Display', serif;
+  min-height: 100px;
+  width: 100vw;
+  background-color: #BAACAC;
+  text-align: center;
+  padding: 20px 0;
+  line-height: 50px;
+  border: solid #413F48;
+}
+
+h3 {
+  background-color: #fff;
+  padding: 10px;
+}
+
+i {
+  margin-right: 5px;
+}
+i.fa-globe{
+  margin-left: 10px;
+  font-size: 50px;
 }
 
 button, 
@@ -27,28 +43,40 @@ input {
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
 }
+
 button {
   padding: 15px;
-  background-color: #332828;
+  margin: 15px;
+  background-color: #797780;
   color: #EBDFDF;
   cursor: pointer;
   transition: linear.8s;
 }
+
 button:hover {
   background-color: #EBDFDF;
   color: #332828;
+}
+
+input {
+  border: solid 2px #413F48;
+}
+
+input:hover {
+  background-color: #EBDFDF;
 }
 
 ul#countries {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
   background-color: #BAACAC;
-  padding: 0 20px;
+  padding: 10px;
   padding-bottom: 15px;
+  border: solid 2px #fff;
 }
 
 ul#countries li {
-  padding: 3px;
+  padding: 5px;
 }
 
 ul .name {
@@ -58,9 +86,23 @@ ul .name {
   font-family: 'Playfair Display', serif;
   background-color: #EBDFDF;
   padding: 5px;
-
 }
 
 #country-name {
   margin: 15px;
+}
+
+table {
+  border: solid 2px;
+  padding: 5px;
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+  width: 50%;
+}
+
+tr:hover {
+  background-color: #EBDFDF;
 }
