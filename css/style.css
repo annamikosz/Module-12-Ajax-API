@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #928282;
+}
+h1, h2{
+font-family: 'Playfair Display', serif;
+min-height: 100px;
+width: 100%;
+background-color: #BAACAC;
+text-align: center;
+padding: 20px 0;
+
+}
+
+button, 
+input {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+button {
+  padding: 15px;
+  background-color: #332828;
+  color: #EBDFDF;
+  cursor: pointer;
+  transition: linear.8s;
+}
+button:hover {
+  background-color: #EBDFDF;
+  color: #332828;
+}
+
+ul#countries {
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+  background-color: #BAACAC;
+  padding: 0 20px;
+  padding-bottom: 15px;
+}
+
+ul#countries li {
+  padding: 3px;
+}
+
+ul .name {
+  margin-top: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  background-color: #EBDFDF;
+  padding: 5px;
+
+}
+
+#country-name {
+  margin: 15px;
+}

@@ -18,7 +18,14 @@ $(function () {
   function showCountriesList(resp) {
     countriesList.empty();
     resp.forEach(function(item){
-      $('<li>').text(item.name).appendTo(countriesList);
+  
+      $('<li>').addClass('name').text("Name: " + item.name).appendTo(countriesList);
+      $('<li>').text("Capital: "  + item.capital).appendTo(countriesList);
+      $('<li>').text("Region: "  + item.region).appendTo(countriesList);
+      $('<li>').text("Subregion: "  + item.subregion).appendTo(countriesList);
+      $('<li>').text("Language: "  + item.languages).appendTo(countriesList);
+      $('<li>').text("Timezones: "  + item.timezones).appendTo(countriesList);
+
     });
   }
 
