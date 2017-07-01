@@ -6,14 +6,14 @@ function Column(id, name) {
     this.element = createColumn();
 
   function createColumn() {
-// TWORZENIE NOWYCH WĘZŁÓW
+// CREATING NEW NODES
     var column = $('<div class="column"></div>');
     var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
     var columnCardList = $('<ul class="card-list"></ul>');
     var columnDelete = $('<button class="btn-delete">x</button>');
-    var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
+    var columnAddCard = $('<button class="column-add-card">Add a card</button>');
     
-// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
+// PINNING EVENTS
     columnDelete.click(function() {
       self.deleteColumn();
     });
@@ -21,7 +21,6 @@ function Column(id, name) {
     columnAddCard.click(function(event) {
       var cardName = prompt("Enter the name of the card");
       event.preventDefault();
-      self.createCard(new Card(cardName));
       $.ajax({
         url: baseUrl + '/card',
         method: 'POST',
@@ -36,7 +35,7 @@ function Column(id, name) {
       });
     });
       
-// KONSTRUOWANIE ELEMENTU KOLUMNY
+// BUILDING THE COLUMN ELEMENTS
     column.append(columnTitle)
       .append(columnDelete)
       .append(columnAddCard)

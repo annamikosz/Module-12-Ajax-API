@@ -1,4 +1,4 @@
-// KLASA KANBAN CARD
+// KANBAN CARD CLASS
 function Card(id, name) {
   var self = this;
   
@@ -23,13 +23,13 @@ function Card(id, name) {
 }
 Card.prototype = {
   removeCard: function() {
-      var self = this;
-      $.ajax({
-        url: baseUrl + '/card/' + self.id,
-        method: 'DELETE',
-        success: function(){
-          self.element.remove();
-        }
-      });
-    }
+    var self = this;
+    $.ajax({
+      url: baseUrl + '/card/' + self.id,
+      method: 'DELETE',
+      success: function(){
+        self.element.remove();
+      }
+    });
+  }
 }
