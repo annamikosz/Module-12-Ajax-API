@@ -70,5 +70,6 @@ p {
         .board .column-container .column ul li:hover {
           background-color: #FFF04C; }
       .board .column-container .column h2 {
+        cursor: pointer;
         color: #302EA3;
         background-color: #fff; }

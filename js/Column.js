@@ -35,6 +35,26 @@ function Column(id, name) {
       });
     });
       
+
+    //CHANGING THE COLUMN TITLE  
+    columnTitle.click(function(event){
+      var newNameColumn = prompt("Enter the new name of the column");
+      event.preventDefault();
+      $.ajax({
+        url: baseUrl + '/column/' + self.id,
+        method: 'PUT',
+        data: { 
+        name: newNameColumn,
+        },
+        success: function(response) {
+          columnTitle.text(newNameColumn);
+          column.append(self.columnTitle);
+        }
+      });
+    }); 
+
+
+      
 // BUILDING THE COLUMN ELEMENTS
     column.append(columnTitle)
       .append(columnDelete)
@@ -57,5 +77,7 @@ Column.prototype = {
         self.element.remove();
       }
     });
+
+
   }
 };
