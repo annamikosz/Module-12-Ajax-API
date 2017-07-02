@@ -54,7 +54,7 @@ function Column(id, name) {
     }); 
 
 
-      
+
 // BUILDING THE COLUMN ELEMENTS
     column.append(columnTitle)
       .append(columnDelete)
@@ -77,7 +77,5 @@ Column.prototype = {
         self.element.remove();
       }
     });
-
-
   }
 };
